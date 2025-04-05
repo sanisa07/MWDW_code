@@ -1,0 +1,128 @@
+body
+{   
+    background-color: gray;
+}
+.nav{
+    overflow: hidden;
+    background-color: yellowgreen;
+    
+}
+.nav a {
+    float: left;
+    color: aliceblue;
+    text-align: center;
+    padding: 8px 130px;
+    font-weight: bold;
+    font-style: italic;
+}
+.nav a:hover{
+    background-color: darkgreen;
+    
+}
+.nav a:active{
+    color: yellow;
+    
+}
+h1{
+    text-align: center; 
+    font-size: 35px; 
+    text-decoration: underline;
+    color: rgb(4, 63, 4);
+}
+h4{
+    font-size: 25px; color: yellowgreen;
+}
+p.intro  {
+    font-size: 20px; 
+    font-style: italic; 
+    color: aliceblue;
+    text-align: justify;
+}
+p.intro2{
+    font-size: 45px;
+    color: pink;
+}
+p.intro3 {
+    font-size: 20px; 
+    color: darkgreen;
+    text-align: justify;
+}
+
+p.contact{
+    font-size: 20px;
+    color: aliceblue;
+}
+p.contact > a {
+    color: yellowgreen; 
+    font-size: 24px;
+}
+#img1{
+    float: right;
+    width: 500px;
+    height: 500px;
+}
+.div1{
+    display: flex;
+    padding: 30px;
+    margin: 5px;
+
+}
+.container > a{
+    background-color: pink; 
+    color: black; 
+    padding: 15px; 
+    font-size: 20px;
+}
+.container > a:hover{background-color: darkgreen;}
+.container{padding: 30px;}
+#img2{
+    height: 800px;
+    width: 400px;
+}
+li{
+    color: darkgreen; 
+    padding: 5px; 
+    font-size: 20px;
+}
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse ;
+    font-size: 23px;
+    padding: 5px;
+    margin: 10px;
+}
+th{
+    background-color: darkgreen; 
+    color: aliceblue;
+}
+td{background-color:#ada;}
+.tableanchor{
+    font-style: italic; 
+    font-weight: bold;
+    color: gray;
+}
+form{
+    border: 2px solid red; 
+    padding: 20px; 
+    background-color: rgba(255, 192, 203, 0.788);
+}
+label.field{
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+    text-align: right;
+    color: aliceblue;
+    font-weight: bold;
+    
+}
+div.submit input{
+    margin-left: 165px;
+}
+input[type="text"],input[type="email"],textarea {
+    width: 300px;
+    font: 18px verdana;
+    border: solid 2px #666;
+    background-color: #ada;
+}
+section{background-color: rgba(170, 221, 170, 0.629);}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5Q7</title>
+    <style>
+        h1{color: olivedrab; text-align: center; text-decoration: underline;}
+        h3{ font-size: 25px; color: mediumvioletred; text-align: center;}
+        img{height: 500px; width: 800px;}
+        hr{border: 3px solid olivedrab;}
+        a:hover{ font-style: italic; background-color: bisque; color: brown;}
+        dt{font-weight: bold;}
+        p{font-size: 20px; font-family: 'Times New Roman', Times, serif;}
+        div{border: 2px solid black; margin: 10px; padding: 5px; background-color: lightblue;}
+        #posfix{ position: fixed; font-weight: 900; font-size: 20px; background-color: pink; color: brown;}
+    </style>
+</head>
+<body>
+    <h1>KNOWLEDGE BASE</h1>
+    <div>
+    <h3 id="TOP">Table of Contents</h3>
+    <ol>
+        <li><a href="#1">List</a></li>
+        <li><a href="#2">Linking</a></li>
+        <li><a href="#3">Selectors</a></li>
+        <li><a href="#4">CSS Formatting</a></li>
+    </ol>
+    </div>
+    <p id="posfix">
+        <a href="#TOP">Go To Top</a>
+    </p>
+    <div>
+    <h3 id="1">List</h3>
+    <p>
+        In HTML, lists are used to group related items, making content more organized and readable. There are three main types:
+    </p>
+    <dl>
+        <dt>Ordered List 
+            <dd>Displays items in a numbered format, typically used when order matters, like steps in a process.</dd>
+        </dt>
+        <dt>Unordered List
+            <dd> Presents items in a bulleted format, suited for lists without a specific order, such as categories or features.</dd>
+        </dt>
+        <dt>Definition List
+            <dd>Contains pairs of terms and descriptions, useful for glossaries or FAQs. Each term is followed by a definition.</dd>
+        </dt>
+    </dl>
+    <p>
+        In CSS, lists can be customized extensively. You can change bullet styles with list-style-type (e.g., circle, square, decimal), or remove bullets using list-style: none;. Custom icons or images can replace default bullets with list-style-image. The appearance of lists can also be modified with properties like padding, margin, and color. For nested lists, indentation can be controlled by adjusting margin or padding values. You can also style lists horizontally by setting display: inline; on li elements, often used for navigation menus.
+
+        Overall, HTML and CSS provide flexible options for creating and styling lists, making them versatile for various webpage layouts and designs.
+    </p>
+    <img src="./Images/List.png" alt="list" >
+    <hr>
+    </div>
+    <div>
+    <h3 id="2">Linking</h3>
+    <p>
+        In HTML, a link is created using the a (anchor) tag, allowing users to navigate between web pages or jump to different sections within a page. The `href` attribute within the anchor tag specifies the destination URL, which can be an external website or an internal link to another page on the same site. Additional attributes like `target="_blank"` open links in new tabs, while `rel="nofollow"` can instruct search engines not to follow the link, useful for SEO purposes.
+
+            CSS provides control over how links look and behave. Links have default states like normal (unvisited), `:hover` (when the user hovers over them), `:active` (when the link is clicked), and `:visited` (for previously visited links). Using these pseudo-classes, developers can change link color, style, or add effects like underline or text shadow, enhancing user interaction and improving accessibility. 
+            
+            For example, applying a color transition effect on the `:hover` state can create a smooth color change when the link is hovered, improving the user experience. Customizing link appearance with CSS is important for creating a cohesive, visually appealing design that aligns with the rest of the webpage styling and guides users effectively through the site.
+    </p>
+    
+    <dl>
+        <dt>Anchor Tag
+            <dd>Used to create links in HTML. The href attribute in the a tag defines the URL of the page the link goes to.</dd>
+        </dt>
+        <dt>href attribute
+            <dd>An attribute in the a tag that specifies the destination URL or path of the link.</dd>
+        </dt>
+        <dt>target attribute
+            <dd>Specifies where to open the linked document. Common values include:
+            <ul>
+                <li>_self (default): Opens in the same tab.</li>
+                <li>_blank: Opens in a new tab.</li>
+                <li>_parent: Opens in the parent frame.</li>
+                <li>_top: Opens in the full body of the window.</li>
+            </ul>
+            </dd>
+        </dt>
+        <dt>CSS Pseudo-classes for Link
+            <dd>Special states of links in CSS.
+            <ul>
+                <li>:link: Targets unvisited links.</li>
+                <li>:visited: Targets links that have already been clicked</li>
+                <li>:hover: Applies styles when the link is hovered over.</li>
+                <li>:hover: Applies styles when the link is hovered over.</li>
+            </ul>
+        </dd>
+        </dt>
+        <dt>Anchor ID
+            <dd>A method for linking to specific sections within a webpage by using an id attribute on an element. Links using #id scroll the page to the element with the matching id.</dd>
+        </dt>
+    </dl>
+    <img src="./Images/Link.jpg" alt="Link">
+    <hr>
+    </div>
+
+    <div>
+    <h3 id="3">Selectors</h3>
+    <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.In other articles you may have met some different selectors, and learned that there are selectors that target the document in different ways — for example by selecting an element such as h1, or a class such as .special.In CSS, selectors are defined in the CSS Selectors specification; like any other part of CSS they need to have support in browsers for them to work. The majority of selectors that you will come across are defined in the Level 3 Selectors specification and Level 4 Selectors specification, which are both mature specifications, therefore you will find excellent browser support for these selectors.</p>
+    <p>Types Of Selectors :</p>
+    <dl>
+        <dt>Simple selectors</dt>
+        <dd>select elements based on name, id, class</dd>
+        <dt>Combinator selectors </dt>
+        <dd>select elements based on a specific relationship between them</dd>
+        <dt>Pseudo-class selectors </dt>
+        <dd>select elements based on a certain state</dd>
+        <dt>Pseudo-elements selectors </dt>
+        <dd>select and style a part of an element</dd>
+        <dt>Attribute selectors </dt>
+        <dd>select elements based on an attribute or attribute value</dd>
+    </dl>
+    <img src="./Images/CSS-Selectors.png" alt="selectors">
+    <hr>
+    </div>
+    <div>
+    <h3 id="4">CSS Formatting</h3>
+    <p>CSS (Cascading Style Sheets) formatting allows web developers to control the look and feel of a website, separating content from presentation. CSS formatting covers a range of stylistic adjustments, including layout, color, typography, spacing, and more, applied to HTML elements.</p>
+    <p>Types of CSS :</p>
+    <dl>
+        <dt>Inline CSS</dt>
+        <dd>An inline CSS is used to apply a unique style to a single HTML element.</dd>
+
+        <dt>Internal CSS</dt>
+        <dd>An internal CSS is used to define a style for a single HTML page.</dd>
+
+        <dt>External CSS</dt>
+        <dd>An external style sheet is used to define the style for many HTML pages</dd>
+    </dl>
+    <img src="./Images/CSSFormatting.png" alt="CSS">
+    </div>
+</body>
+</html>
